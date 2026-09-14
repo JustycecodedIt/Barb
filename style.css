@@ -236,6 +236,11 @@ nav a{
                 gap: 15px;
  }
 
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+
 
 nav{
     gap: 12px;
