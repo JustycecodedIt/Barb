@@ -1,0 +1,404 @@
+/*General styling barbie portfolio*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --light-purple: #c3a5f4;
+    --old-gold: #B89B5E;
+    --dark-purple: #7b2feddd;
+    --black: #111111;
+    --white: #ffffff;
+    --gray: #888888;
+    --yellow: #d4cf3cf3;
+     --pink: #f1a1c8;
+     --lavender: #e2cbf6;
+
+
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--lavender);
+    color: var(--black);
+    line-height: 1.6;
+    }
+
+    /*Header styling*/
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 8%;
+        background-color: var(--lavender);
+        position: sticky;
+        padding-bottom: 50px;
+        top: 0;
+        z-index: 1000;
+        
+     } 
+
+     header::after {
+        content: "";
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+
+        background-image: url("images/boarder-head.jpeg");
+        background-repeat: repeat-x;
+        background-size: auto 15px;
+        
+     }
+
+    header h1{
+        color: var(--light-purple) ;
+        font-size: 28px;
+        text-shadow: 3px 3px 0 var(--yellow);
+        font-family: "chewy",cursive;
+        -webkit-text-stroke: 1.5px var(--dark-purple);
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--light-purple);
+    font-weight: bold;
+    font-family: "Chewy", cursive;
+    -webkit-text-stroke: 0.6px var(--dark-purple);
+    }
+
+    nav a:hover{
+        color: var(--old-gold);
+        opacity: 0.6;
+    }
+  
+    /*sections*/
+    section {
+        min-height:80vh;
+        padding: 100px 8%;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+     
+        }
+
+        section h2{
+            font-size:45px;
+            color: var(--black);
+            margin-bottom: 20px;
+
+        }
+
+        section p{
+            max-width: 650px;
+            font-size: 18px;
+            color: var(--black);
+            font-family: "Fredoka",cursive ;
+        }
+        /*Home*/
+        #home {
+           min-height: 100vh;
+           Background-image: url('images/The Stem Dolly!.png');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+
+             }
+            
+              
+        
+
+            
+
+            /*About*/
+            #about {
+                background-color:  var(--lavender);
+                text-align: center;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                gap: 110px;
+                position:relative;
+                padding-bottom: 50px;
+                
+            }
+
+           #about::after{
+            content: "";
+            position:absolute;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+
+            background-image: url("images/boarder-head.jpeg");
+            background-repeat: repeat-x;
+            background-size: auto 15px;
+            background-position: bottom;
+           }
+          
+            .about-scrapbook{
+                width: 40%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .about-text{
+                width: 40%;
+            }
+
+            #about h2{
+                font-family: "Fredoka", cursive;
+                color: var(--dark-purple);
+                -webkit-text-stroke: 0.4px var(--white);
+                text-shadow: 3px 3px 0 var(--white)
+            }
+
+            #about p{
+                position: relative;
+                background: lightgoldenrodyellow;
+                padding: 30px;
+                clip-path: polygon(
+                    0% 2%, 5% 0%, 10% 2%, 15% 0%, 20% 2%,
+                    25% 0%, 30% 2%, 35% 0%, 40% 2%, 
+                    45% 0%, 50% 2%, 55% 0%, 60% 2%, 
+                    65% 0%, 70% 2%,75% 0%, 80% 2%,
+                    85% 2%, 90% 0%, 95% 2%, 100% 0%,
+                    100% 98%, 95% 100%, 90% 98%, 85% 100%,
+                    80% 98%, 75% 100%, 70% 98%, 65% 100%,
+                    60% 98%, 55% 100%, 50% 98%, 45% 100%,
+                    40% 98%, 35% 100%,  30% 98%, 25% 100%,
+                    20% 98%, 15% 100%, 10% 98%, 5% 100%, 0% 98%
+                );
+
+
+            }
+
+
+            /*Projects*/
+            #projects {
+                background-image: url("images/pro-background.jpeg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: #e2cbf6;
+                position:relative;
+                padding-bottom: 50px;
+            }
+                
+                #projects::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 40px;
+
+                    background-image: url("images/boarder-head.jpeg");
+                    background-repeat: repeat-x;
+                    background-size: auto 15px;
+                    background-position: bottom;
+                }
+            
+            /*contact*/
+            #contact{
+                
+                background-image: url("images/contact.jpeg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: #e2cbf6;
+                
+ }
+       
+             
+               /*mobile*/
+               @media (max-width:700px) {
+           
+            header{
+                flex-direction: column;
+                gap: 15px;
+ }
+
+
+nav{
+    gap: 12px;
+}
+ 
+        }
+    
+      
+ .scrapbook {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    perspective: 1000px;
+    cursor: pointer;
+ }
+ 
+ 
+    .scrapbook-cover {
+    position: absolute;
+     width: 100%;
+    height: 100%;
+    background-image: url("images/scrapbook\ cover.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform-origin: left center;
+    transition: transform 0.8s ease;
+    
+    
+ }
+   
+ .spiral-binding{
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+ }
+
+ .spiral-binding span{
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    
+ }
+
+ 
+
+  .scrapbook:not(.open) .scrapbook-cover:hover {
+    transform: translateY(-5px) rotate(-2deg);
+ }
+
+
+ 
+
+ .scrapbook.open .scrapbook-cover {
+    transform: rotateY(-160deg);
+    
+}
+
+.scrapbook-pages{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-purple);
+    border: 4px solid var(--old gold);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+  
+}
+
+
+.scrapbook-pages img{
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid var(--white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Floating Contact Buttons*/
+#contact {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.floating-button {
+    position: absolute;
+    inset: 0;
+}
+
+.float-btn {
+   position: absolute;
+   width: 130px;
+   height: 70px;
+    
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   border: none;
+   background-color: transparent;
+
+   display: block;
+   
+}
+
+.btn1 {
+    background-image: url("images/btn1.png");
+}
+ 
+.btn2{
+    background-image: url("images/btn2.png");
+}
+
+.btn3{
+    background-image: url("images/btn3.png");
+}
+
+.btn4{
+    background-image: url("images/btn4.png");
+
+}
+
+
+.btn5{
+    background-image: url("images/btn5.png");
+}
+
+.btn6{
+    background-image: url("images/btn6.png");
+}
+
+.btn7{
+    background-image: url("images/btn7.png");
+}
+
+.btn8{
+    background-image: url("images/btn8.png");
+}
+
+
+
+
+ .floating-button {
+    position: fixed;
+    display: block;
+    z-index: 1000;
+}
